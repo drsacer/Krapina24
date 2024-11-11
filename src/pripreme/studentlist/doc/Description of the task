@@ -1,0 +1,32 @@
+U ODREĐENOJ MJERI SIMULACIJA HITA AKADEMIJE
+
+Student / Course
+U početnoj verziji programa postoje 2 studenta i 3 tečaja.
+
+Student se prvo mora prijaviti u aplikaciju.
+1 - Login
+2 - Exit
+
+Tada mu se otvara izbornik :
+"1 - Registration of a new course"
+"2 - Print all courses"
+"3 - Activate the course"
+"4 - Confirm passed course"
+"5 - Change password"
+"6 - Exit"
+
+Student može upisati novi tečaj i ispisati sve svoje tečajeve.
+Pošto postoji više tečaja, student aktivira pojedini tečaj (sluša predavanje) i nakon toga ga može polagati.
+Kad položi sve tečajeve pristupa finalnom - web programiranje.
+Student može promijeniti svoju lozinku.
+
+
+Dalje :
+Transaction log.
+
+Dodati admina koji dodaje nove studente i tečajeve da nisu oni hardkodirani. Dodati profesora.
+Omogućiti nasljeđivanje - osoba - student/admin/profesor.
+
+Spremiti postojeće stanje u datoteku, a nakon toga u bazu.
+
+

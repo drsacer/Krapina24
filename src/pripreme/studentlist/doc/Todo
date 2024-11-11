@@ -1,0 +1,21 @@
+
+  - napraviti povećanje broja bodova - kad su svi tečajevi položeni, pristupa se finalnom . web programiranje
+
+ - napraviti klasu admin
+ - datoteka sa spremeljenim popisom svih studenata i kurseva
+ - nasljeđivanje
+ - spremati u bazu
+ - proći po project 2.0
+
+
+ profesor ( za sada student) treba upisati da je položio ispit te se automtski povećava broj godina i tada ispisuje
+ poruka da li ima dobvolja broj bodova za sljedeću godinu
+
+  dodati profesora koji isto ima listu kurseva i listu studenata
+
+
+
+
+ -
+
+
