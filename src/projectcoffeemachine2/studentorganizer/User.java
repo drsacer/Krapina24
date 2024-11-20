@@ -10,28 +10,30 @@ public class User {
     private int currentPoints;
     private String username;
     private String password;
-    String typeOfUser;
+    int typeOfUser; // 1 - admin, 2 - student
     private List<Course> studentCoursesList = new ArrayList<>();
 
     private StudentManager studentManager;
     public User() {
     }
 
-    public User(String firstName, String lastName, String oib) {
+    public User(String firstName, String lastName, String oib, int typeOfUser) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.oib = oib;
+        this.typeOfUser = typeOfUser;
         this.setCurrentPoints(0);
     }
 
-    public User(String firstName, String lastName, String oib, String username, String password) {
+    public User(String firstName, String lastName, String oib, String username, String password, int typeOfUser) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.oib = oib;
         this.username = username;
         this.password = password;
-
-        this.setCurrentPoints(0);
+        if (typeOfUser == 2) {
+            this.setCurrentPoints(0);
+        }
     }
     public void setCurrentPoints(int currentPoints) {
         this.currentPoints = currentPoints;
@@ -62,11 +64,11 @@ public class User {
         this.password = password;
     }
 
-    public String getTypeOfUser() {
+    public int getTypeOfUser() {
         return typeOfUser;
     }
 
-    public void setTypeOfUser(String typeOfUser) {
+    public void setTypeOfUser(int typeOfUser) {
         this.typeOfUser = typeOfUser;
     }
 

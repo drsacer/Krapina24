@@ -7,6 +7,7 @@ public class StudentManager {
     private List<User> allStudentsList = new ArrayList<>();
     private List <Course> allCoursesList = new ArrayList<>();
     private List<Event> eventsList = new ArrayList<>();
+    private List<User> adminsList = new ArrayList<>();
 
     public List<User> getAllStudentsList() {
         return allStudentsList;
@@ -18,9 +19,12 @@ public class StudentManager {
         return eventsList;
     }
 
+    public List<User> getAdminsList() {
+        return adminsList;
+    }
 
-    public void addNewStudent(String firstName, String lastName, String oib, String userName, String password ) {
-        User newUser = new User(firstName, lastName, oib, userName, password);
+    public void addNewStudent(String firstName, String lastName, String oib, String userName, String password, int type ) {
+        User newUser = new User(firstName, lastName, oib, userName, password, type);
         allStudentsList.add(newUser);
 
         /* 1.način dodavanja transakcije u listu
